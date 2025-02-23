@@ -1,0 +1,180 @@
+:root {
+  --blue: blue;
+  --dark-blue: #30336b;
+  --midnight-blue: #130f40;
+  --light-blue: #7ed6df;
+  --light-red: #e84118;
+  --box-size: 800px;
+
+  --body-color: white;
+  --bg-color: var(--light-red);
+  --text-color: var(--light-blue) ;
+  --link-color: var(--light-blue);
+  --link-color-hover: var(--blue);
+}
+
+:root[data-theme="dark"] {
+  --body-color: var(--midnight-blue);
+  --bg-color: var(--dark-blue);
+  --text-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+body {
+  background-color: var(--body-color);
+  height: 200vh;
+}
+
+header,
+main {
+  background-color: var(--bg-color);
+  min-height: 20px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  
+}
+
+header {
+  border-bottom: 1px solid var(--light-red);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+body > header {
+  border: 1px solid var(--light-red);
+}
+
+
+header > nav {
+
+  width: 800px;
+  margin: 0 auto;
+  
+}
+
+header > nav > ul {
+  float: left;
+  list-style-type: none;
+}
+
+header > nav > ul:last-of-type {
+  float: right;
+}
+
+header > nav > ul > li {
+  float: left;
+  margin-right: 5px;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: var(--link-color);
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+header > nav > ul > li > a:hover {
+  color: var(--link-color-hover);
+  background-color: var(--light-blue);
+}
+
+header > nav > ul > li:last-of-type > a {
+  background-color: #fd9696;
+}
+
+/* main */
+
+main {
+  width: var(--box-size);
+  margin: 0 auto 30px;
+  border: 1px solid var(--light-red);
+  border-radius: 4px;
+  overflow:auto;
+  color: var(--text-color);
+}
+
+/* aside */
+
+aside,
+section {
+  float: left;
+}
+
+aside {
+  width: 30%;
+  padding: 20px;
+}
+
+aside > ul {
+  list-style-type: none;
+}
+
+aside > ul > li {
+  margin-bottom: 10px;
+}
+
+aside > ul > li > a {
+  color: var(--link-color);
+  padding: 6px 10px;
+  text-decoration: none;
+  display: block;
+
+}
+
+aside > ul > li > a:hover {
+  color: var(--link-color-hover);
+}
+
+/* section */
+
+section {
+  width: 70%;
+}
+
+article, 
+article > header {
+  background-color: var(--body-color);
+}
+
+article > header {
+  padding: 0;
+  z-index: 1;
+}
+
+article {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+article > p {
+  margin-bottom: 10px;
+}
+
+article > footer {
+  padding: 10px 0 ;
+}
+
+article > footer > a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid var(--bg-color);
+  border-radius: 4px;
+  margin: 10px 0;
+}
