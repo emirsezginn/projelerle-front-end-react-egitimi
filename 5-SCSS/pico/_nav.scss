@@ -1,0 +1,70 @@
+@mixin inside-style {
+  background-color: var(--bg-color);
+  min-height: 20px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  
+}
+header {
+    @include inside-style()
+}
+
+main {
+    @include inside-style()
+}
+
+header {
+    border: 1px solid var(--light-red);
+  border-bottom: 1px solid var(--light-red);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  & > nav {
+
+    width: 800px;
+    margin: 0 auto;
+    
+    & > ul {
+        float: left;
+        list-style-type: none;
+
+        &:last-of-type {
+            float: right;
+
+            & > li > a {
+                background-color: #fd9696;
+              }
+          }
+
+          & > li {
+            float: left;
+            margin-right: 5px;
+
+            & > a {
+                text-decoration: none;
+                color: var(--link-color);
+                padding: 4px 8px;
+                border-radius: 8px;
+
+                &:hover {
+                    color: var(--link-color-hover);
+                    background-color: var(--light-blue);
+                  }
+              }
+              
+          }
+      }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

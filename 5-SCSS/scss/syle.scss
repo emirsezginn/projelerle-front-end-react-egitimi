@@ -1,0 +1,19 @@
+@import "variables"; //değişkenleri import ettik. scss sayesinde değişkenleri ya da ayırmak istediğimiz diğer dosyaları bu şekilde ayırabilir ve import ediliriz.burada alt çizgi kullanımına gerek çünkü alt çizgi kendi içerisinde bunun bir alt aypı olduğu anlamına geliyor.
+
+// $bg-color:#e74c3c !global;  class içerisinde kendi değişkenini tanımlayabilirsin ve bunu global yapabilirsin. fakat bu değişken yapılan classın altındaki classlarda geçerli oluyor.
+@import "base";
+@import "nav";
+@import "container";
+@import "card-mixin";
+@import "extend";
+@import "interpolation";
+@import "list";
+@import "map-p";
+@import "for-headers";
+@import "color";
+// import ederken sıraya dikkat etmeliyiz. burda nav ı yukarıya alsam renk nav içerisindeki çektiğmiz değişkenleri almadan nav barı yazdırmaya çalışacak ve patlayacak.
+
+
+
+
+

@@ -1,0 +1,9 @@
+.global {
+    $bg-color: #e74c3c;
+    background-color: $bg-color;
+  }
+  .container {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: $p-10;
+  }

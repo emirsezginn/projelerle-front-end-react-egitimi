@@ -1,0 +1,27 @@
+// @import "card-mixin";
+
+nav{
+   // @include card-mixin(red);
+   background-color: $bg-color;
+    padding: $p-10;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+ 
+    & > ul {
+       display: flex;
+       margin: 0;
+       list-style: none;
+       & > li {
+          & > a{
+             color:$text-color;
+             text-decoration: none;
+             margin: 0 10px;
+             &:hover {
+                text-decoration: underline;
+                color: $j-color;
+             }
+          }
+       }
+    }
+ }

@@ -1,0 +1,9 @@
+.extend-button {
+    color: white;
+    background-color: $j-color;
+
+    &-success {
+        @extend .extend-button;
+        background-color: $bg-color;
+    }
+}

@@ -1,0 +1,10 @@
+$primary-color: #1abc9c;
+$secondary-color:#3498db;
+$j-color:#7f8c8d;
+$text-color:white;
+$bg-color:#2c3e50;
+$p-10: 10px;
+
+// bu dosya sayesinde değişkenleri sakalayabilir ve sadece gerekli olanları import edebiliriz. 
+
+//tek sıkıntı bu import edilecek dosyaları oluştururken dosya adının başına "_" koymalıyız. bu sayede css dosyasında bu dosyaya ait bir css dosyası oluşturulmaz. css bunun bir alt bilgi olduğunu anlar.

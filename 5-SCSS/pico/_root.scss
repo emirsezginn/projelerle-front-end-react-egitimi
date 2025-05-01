@@ -1,0 +1,20 @@
+:root {
+    --blue: blue;
+    --dark-blue: #30336b;
+    --midnight-blue: #130f40;
+    --light-blue: #7ed6df;
+    --light-red: #e84118;
+    --box-size: 800px;
+  
+    --body-color: white;
+    --bg-color: var(--light-red);
+    --text-color: var(--light-blue) ;
+    --link-color: var(--light-blue);
+    --link-color-hover: var(--blue);
+  }
+  
+  :root[data-theme="dark"] {
+    --body-color: var(--midnight-blue);
+    --bg-color: var(--dark-blue);
+    --text-color: white;
+  }

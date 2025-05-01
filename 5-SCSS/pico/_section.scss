@@ -1,0 +1,44 @@
+/* section */
+  
+section {
+    width: 70%;
+  }
+  
+  article, 
+  article > header {
+    background-color: var(--body-color);
+  }
+  
+  article > header {
+    padding: 0;
+    z-index: 1;
+  }
+  
+  article {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 4px;
+
+    & > p {
+        margin-bottom: 10px;
+      }
+
+      & > footer {
+        padding: 10px 0 ;
+
+        & > a {
+            color: var(--link-color);
+            text-decoration: none;
+          }
+      }
+  }
+
+  img {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid var(--bg-color);
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  

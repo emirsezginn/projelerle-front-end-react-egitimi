@@ -1,0 +1,18 @@
+$emarald:#9b59b6;
+
+$darken-emarald: darken($emarald, 10%);
+$lighter-emarald: lighten($emarald,30%);
+
+.base-color {
+    padding: 20px;
+    background-color: $emarald;
+}
+.darken-color {
+    @extend .base-color;
+    background-color: $darken-emarald;
+}
+
+.lighter-color {
+    @extend .base-color;
+    background-color: $lighter-emarald;
+}
