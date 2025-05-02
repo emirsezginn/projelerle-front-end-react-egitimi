@@ -3,7 +3,7 @@ $sizes: 0 5 10 15 20;
 
 // @each $key, $valus in $names {
 //     .p#{$key}-10 {
-//         padding-#{$names}: 10px;
+//         padding-#{$valus}: 10px;
 //     }
 // }
 
